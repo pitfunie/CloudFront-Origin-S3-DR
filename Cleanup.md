@@ -1,5 +1,7 @@
 # Disable distribution using the update distribution configuration feature.
-
+# With this exercise, it was possible to verify how Amazon CloudFront distributions 
+# can be resilient by using two or more origins with the Origin Group feature in a 
+# strategy of the type Warm-Standby.
 
 CLOUDFRONT_DIST=$(aws cloudfront get-distribution-config --id ${CLOUDFRONT_ID}) # Cloudfront Distribution info
 
